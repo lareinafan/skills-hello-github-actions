@@ -1,0 +1,10 @@
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a command
+        run: echo 'Hello, GitHub Actions!'
